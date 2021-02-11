@@ -1,5 +1,7 @@
 ## Introducing filtered
 
+![CI](https://github.com/mayeedwin/filtered/workflows/CI/badge.svg)
+
 Text based **filter service** for firebase firestore and array of objects
 
 ### Install filtered via NPM
