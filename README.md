@@ -22,7 +22,7 @@ import { filtered } from "https://unpkg.com/filtered/esm/index.js";
 import { filtered } from "filtered";
 ```
 
-#### API Spec
+### API Spec
 
 Filtered receives an object with three **required** keys as shown below;
 
