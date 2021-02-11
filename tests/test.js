@@ -14,7 +14,7 @@ const data = [
 const filter = "name";
 
 // Filter value...
-const value = "l";
+const query = "l";
 
 // Result...
 test("Lisa is found", () => {
@@ -22,7 +22,7 @@ test("Lisa is found", () => {
     filtered({
       data,
       filter,
-      value,
+      query,
     })
   ).toStrictEqual([
     {
