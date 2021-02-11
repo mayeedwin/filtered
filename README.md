@@ -1,4 +1,4 @@
-## Introducing _filtered_ cdn and npm
+## Introducing filtered
 
 Text based **filter service** for firebase firestore and array of objects
 
@@ -33,10 +33,11 @@ const result = filtered({
   query,
 });
 ```
+
 ## Parameters
 
-| Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| data | array  of objects| true | An array of objects |
-filter | string | true  |  The field or key to filter against in an object |
-| query | string | true  |  The query string to filter with |
+| Name   | Type             | Required | Description                                     |
+| ------ | ---------------- | -------- | ----------------------------------------------- |
+| data   | array of objects | true     | An array of objects                             |
+| filter | string           | true     | The field or key to filter against in an object |
+| query  | string           | true     | The query string to filter with                 |
