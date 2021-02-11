@@ -33,13 +33,10 @@ const result = filtered({
   query,
 });
 ```
-
 ## Parameters
 
-| Name   | Type             | Description                                                |
-| ------ | ---------------- | ---------------------------------------------------------- |
-| data   | array of objects | Required : Must be an array of objects                     |
-| filter | string           | Required : The field or key to filter against in an object |
-| query  | string           | Required : The query parameter to filter with              |
-
-## Chat : Join the conversation
+| Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| data | array  of objects| true | An array of objects |
+filter | string | true  |  The field or key to filter against in an object |
+| query | string | true  |  The query string to filter with |
