@@ -1,7 +1,7 @@
 {
   "name": "filtered",
   "version": "0.0.4",
-  "description": "Text based filter and search for firebase firestore and array of objects",
+  "description": "Text based filter and search for firebase cloud firestore and array of objects",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -23,7 +23,8 @@
     "firestore",
     "filter",
     "search",
-    "query"
+    "query",
+    "cloud firestore"
   ],
   "author": "Maye Edwin",
   "license": "MIT",
