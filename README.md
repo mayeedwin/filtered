@@ -43,3 +43,9 @@ const result = filtered({
 | data   | array of objects | true     | An array of objects                             |
 | filter | string           | true     | The field or key to filter against in an object |
 | query  | string           | true     | The query string to filter with                 |
+
+#### Response
+
+| Name   | Type             | Description                                                         |
+| ------ | ---------------- | ------------------------------------------------------------------- |
+| result | array of objects | Result search, an array of found items, could be empty if no result |
