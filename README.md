@@ -36,7 +36,7 @@ const result = filtered({
 });
 ```
 
-## Parameters
+#### Parameters
 
 | Name   | Type             | Required | Description                                     |
 | ------ | ---------------- | -------- | ----------------------------------------------- |
