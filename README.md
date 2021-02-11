@@ -48,4 +48,4 @@ const result = filtered({
 
 | Name   | Type             | Description                                                         |
 | ------ | ---------------- | ------------------------------------------------------------------- |
-| result | array of objects | Result search, an array of found items, could be empty if no result |
+| result | array of objects | Query result - an array of found items, could be empty if no result |
