@@ -26,6 +26,21 @@ import { filtered } from "filtered";
 
 Filtered receives an object with three **required** keys as shown below;
 
+#### Firebase cloud firestore collection - list of docs (i.e with zero docs destructed)
+
+```js
+// Do some awesome filtering....
+//...
+const result = filtered({
+  data,
+  firestore: true,
+  filter,
+  query,
+});
+```
+
+#### For any array of objects
+
 ```js
 // Do some awesome filtering....
 //...
@@ -38,11 +53,12 @@ const result = filtered({
 
 #### Parameters
 
-| Name   | Type             | Required | Description                                     |
-| ------ | ---------------- | -------- | ----------------------------------------------- |
-| data   | array of objects | true     | An array of objects                             |
-| filter | string           | true     | The field or key to filter against in an object |
-| query  | string           | true     | The query string to filter with                 |
+| Name      | Type             | Required | Description                                                                            |
+| --------- | ---------------- | -------- | -------------------------------------------------------------------------------------- |
+| data      | array of objects | true     | An array of objects or firebase cloud firestore collection documents                   |
+| firestore | boolean          | false    | Must be set to `true` if passing firebase cloud firestore collection documents         |
+| filter    | string           | true     | The field or key to filter against in an object or cloud firestore collection document |
+| query     | string           | true     | The query string to filter with                                                        |
 
 #### Response
 
