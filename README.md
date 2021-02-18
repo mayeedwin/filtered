@@ -26,6 +26,21 @@ import { filtered } from "filtered";
 
 Filtered receives an object with three **required** keys as shown below;
 
+#### Firebase cloud firestore collection
+
+Pass an additional **firestore** param for firebase cloud firestone text-based collection document search.
+
+```js
+// Do some awesome filtering....
+//...
+const result = filtered({
+  data,
+  firestore: true,
+  filter,
+  query,
+});
+```
+
 #### For any array of objects
 
 ```js
