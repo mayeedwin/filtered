@@ -28,7 +28,7 @@ Filtered receives an object with three **required** keys as shown below;
 
 #### Firebase cloud firestore collection
 
-Updated the API Spec to take an additional 'firestore' param for @firebase cloud firestone text-based collection document search
+Pass an additional **firestore** param for firebase cloud firestone text-based collection document search.
 
 ```js
 // Do some awesome filtering....
