@@ -1,6 +1,6 @@
 {
   "name": "filtered",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Text based filter and search for firebase cloud firestore and array of objects",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "jest": "^26.6.3",
+    "prettier": "2.2.1",
     "typescript": "^3.9.7"
   }
 }
