@@ -2,7 +2,7 @@
 
 ![CI](https://github.com/mayeedwin/filtered/workflows/CI/badge.svg)
 
-Text based **filter service** for firebase <b>cloud firestore</b> and array of objects
+Text based **filter and search service** for firebase <b>cloud firestore</b> collections and any array of objects
 
 ### Install filtered via NPM
 
