@@ -15,10 +15,10 @@ const filtered = ({ data, filter, query, firestore = false }: Filter) => {
           const doc = item.data();
           const filter_value = doc[`${filter}`];
           if (filter_value) {
-            if (filter_value.toLowerCase().indexOf(query) !== -1) {
+            if (filter_value.toLowerCase().includes(query.toLocaleLowerCase)) {
               isFound = true;
             }
-            if (filter_value.indexOf(query) !== -1) {
+            if (filter_value.includes(query.toLocaleLowerCase)) {
               isFound = true;
             }
           }
@@ -28,10 +28,14 @@ const filtered = ({ data, filter, query, firestore = false }: Filter) => {
           let isFound = false;
           const filter_value = item[`${filter}`];
           if (filter_value) {
-            if (filter_value.toLowerCase().indexOf(query) !== -1) {
+            if (
+              filter_value
+                .toLocaleLowerCase()
+                .includes(query.toLocaleLowerCase())
+            ) {
               isFound = true;
             }
-            if (filter_value.indexOf(query) !== -1) {
+            if (filter_value.includes(query.toLocaleLowerCase())) {
               isFound = true;
             }
           }

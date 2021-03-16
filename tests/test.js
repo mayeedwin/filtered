@@ -14,10 +14,10 @@ const data = [
 const filter = "name";
 
 // Filter value...
-const query = "l";
+const query = "a";
 
 // Result...
-test("Lisa is found", () => {
+test("Find all", () => {
   expect(
     filtered({
       data,
@@ -26,7 +26,40 @@ test("Lisa is found", () => {
     })
   ).toStrictEqual([
     {
+      name: "Maye",
+    },
+    {
       name: "Lisa",
+    },
+  ]);
+});
+
+// Result...
+test("Lisa is found", () => {
+  expect(
+    filtered({
+      data,
+      filter,
+      query: "li",
+    })
+  ).toStrictEqual([
+    {
+      name: "Lisa",
+    },
+  ]);
+});
+
+// Result...
+test("Maye is found", () => {
+  expect(
+    filtered({
+      data,
+      filter,
+      query: "Y",
+    })
+  ).toStrictEqual([
+    {
+      name: "Maye",
     },
   ]);
 });
